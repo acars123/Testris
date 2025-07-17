@@ -1,0 +1,49 @@
+    :root {
+      --bg: #111;
+      --fg: #fff;
+      --grid: #222;
+      --block: #0ff;
+    }* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  border: 2px solid var(--fg);
+  background: var(--grid);
+  touch-action: none;
+}
+
+#controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background: var(--block);
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  body {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
