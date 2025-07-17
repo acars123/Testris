@@ -31,7 +31,7 @@ function createMatrix(w, h) {
 }
 
 function createPiece(type) {
-  if (type === "T") return [[0, 0, 0], [1, 1, 1], [0, 1, 0]];
+  if (type === "T") return { Matrix:[[0, 0, 0], [1, 1, 1], [0, 1, 0]], color:"#ff0"};
   if (type === "O") return [[2, 2], [2, 2]];
   if (type === "L") return [[0, 3, 0], [0, 3, 0], [0, 3, 3]];
   if (type === "J") return [[0, 4, 0], [0, 4, 0], [4, 4, 0]];
