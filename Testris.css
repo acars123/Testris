@@ -1,6 +1,4 @@
     :root {
-      --bg: #111;
-      --fg: #fff;
       --grid: #222;
       --block: #0ff;
     }* {
