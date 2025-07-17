@@ -8,7 +8,89 @@
   margin: 0;
   padding: 0;
 }
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	font-family: "Lucida Grande", "Helvetica Nueue", Arial, sans-serif;
+	background: red; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, darkgreen, yellow); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, darkgreen, yellow); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, darkgreen, yellow); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, darkgreen, yellow); /* Standard syntax */
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
 
+}
+nav {
+	background-color: #1a1a1a;
+	border: 1px solid #1a1a1a;
+	color: #fff;
+	display: block;
+	margin: 0;
+	overflow: hidden;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li {
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+	transition: all 0.2s;
+}
+nav > ul > li > a {
+	color: #b3b3b3;
+	display: block;
+	line-height: 17px;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+nav li > ul {
+	display: none;
+	margin-top: 1px;
+	background-color: #bbb;
+}
+nav li > ul li {
+	display: block;
+}
+nav li > ul li a {
+	color: #111;
+	display: block;
+	line-height: 17px;
+	padding: 0.5em 2em;
+	text-decoration: none;
+}
+nav li:hover {
+	background-color: #666;
+}
+nav li:hover > ul {
+	position: absolute;
+	display: block;
+}
+nav li > ul > li ul {
+	display: none;
+	background-color: #888;
+}
+nav li > ul > li:hover > ul {
+	position:absolute;
+	display: block;
+	margin-left: 100%;
+	margin-top: -3em;
+}
+nav ul > li.sub {
+    background: url(ic_keyboard_arrow_down_white_18dp.png) right center no-repeat;
+}
+nav ul > li.sub li.sub {
+    background: url(ic_keyboard_arrow_right_white_18dp.png) right center no-repeat;
+}
+h1 {
+	color: "#fffa";
+}
 html, body {
   height: 100%;
   background: var(--bg);
